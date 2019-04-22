@@ -9,3 +9,9 @@ php artisan serve
 php artisan make:auth
 
 php artisan route:list
+
+php artisan tinker
+
+$user = \App\User::find(1)
+
+exit
