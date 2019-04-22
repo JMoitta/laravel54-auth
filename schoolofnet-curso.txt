@@ -1,17 +1,6 @@
-php artisan serve
+// http - Não mantém estado -
 
-touch database/database.sqlite
+// sessão - guardada no servidor - os dados do usuário
+//cokkie da sessão
 
-php artisan migrate
-
-php artisan serve
-
-php artisan make:auth
-
-php artisan route:list
-
-php artisan tinker
-
-$user = \App\User::find(1)
-
-exit
+// cokkies - guardada no browser - 
