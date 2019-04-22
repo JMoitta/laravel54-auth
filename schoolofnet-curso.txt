@@ -1,0 +1,11 @@
+php artisan serve
+
+touch database/database.sqlite
+
+php artisan migrate
+
+php artisan serve
+
+php artisan make:auth
+
+php artisan route:list
