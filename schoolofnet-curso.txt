@@ -1,6 +1,5 @@
-// http - Não mantém estado -
+// Remember Me
 
-// sessão - guardada no servidor - os dados do usuário
-//cokkie da sessão
+// processo de logout removendo todos os arquivos menos o .gitignore da pasta storage/framework/sessions/
 
-// cokkies - guardada no browser - 
+// arquivo de configuração da sessão "session.php" está na pasta config/ da aplicação
