@@ -1,5 +1,5 @@
-// Remember Me
+// laravel lang
 
-// processo de logout removendo todos os arquivos menos o .gitignore da pasta storage/framework/sessions/
+php artisan serve
 
-// arquivo de configuração da sessão "session.php" está na pasta config/ da aplicação
+composer require caouecs/laravel-lang
