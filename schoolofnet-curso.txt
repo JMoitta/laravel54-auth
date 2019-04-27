@@ -1,5 +1,5 @@
-// laravel lang
+php artisan serve
 
 php artisan serve
 
-composer require caouecs/laravel-lang
+php artisan make:notification MyResetPasswordNotification
