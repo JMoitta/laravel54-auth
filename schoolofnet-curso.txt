@@ -1,3 +1,7 @@
-composer dumpautoload
+php artisan make:migration add_role_to_users --table=users
 
-php artisan serve
+composer require doctrine/dbal
+
+php artisan make:seeder UsersTableSeeder
+
+php artisan migrate:refresh --seed
