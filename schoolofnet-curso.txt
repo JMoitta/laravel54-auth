@@ -1,6 +1,3 @@
-composer require barryvdh/laravel-ide-helper:2.4.3 --dev
+composer dumpautoload
 
-php artisan ide-helper:generate
-
-// phpstorm
-php artisan ide-helper:meta 
+php artisan serve
