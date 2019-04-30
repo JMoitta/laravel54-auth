@@ -10,6 +10,7 @@
         "codeedu/code_validator": "0.0.2",
         "doctrine/dbal": "^2.9",
         "laravel/framework": "5.4.*",
+        "laravel/socialite": "3.3.*",
         "laravel/tinker": "~1.0"
     },
     "require-dev": {
@@ -43,10 +44,12 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "php artisan ide-helper:generate",
             "php artisan optimize"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan ide-helper:generate",
             "php artisan optimize"
         ]
     },
