@@ -45,3 +45,11 @@ Route::group(['middleware' => 'guest'], function(){
         echo "Olá Mundo!";
     });
 });
+
+Route::get('/auth', function (\Illuminate\Http\Request $request) {
+    //dd($request->user());
+    //dd(\Auth::user());
+    //dd(\Auth::check());
+    //dd(\Auth::id());
+    //\Auth::loginUsingId(1);
+});
