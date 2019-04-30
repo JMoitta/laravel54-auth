@@ -19,6 +19,8 @@ Auth::routes();
 Route::post('/login/social', 'Auth\LoginController@loginSocial');
 Route::get('/login/callback', 'Auth\LoginController@loginCallback');
 
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function(){
     // Authentication Routes...
     $this->get('login', 'Auth\LoginController@showLoginForm')->name('login');
@@ -38,4 +40,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function(){
     Route::get('/login/callback', 'Auth\LoginController@loginCallback');
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => 'guest'], function(){
+    Route::get('/test', function(){
+        echo "Olá Mundo!";
+    });
+});
